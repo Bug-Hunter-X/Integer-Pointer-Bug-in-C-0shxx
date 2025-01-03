@@ -1,0 +1,1 @@
+int main() { int x = 10; int *ptr = &x; //Use const to avoid pointer modification if required. const int *ptr = &x; *ptr = 20; //Or make a copy printf("%d", x); //x will still be 10, demonstrating the bug return 0; }
